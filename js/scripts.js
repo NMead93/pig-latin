@@ -3,10 +3,17 @@ $(document).ready(function() {
     event.preventDefault();
     var input = $('#request').val();
 
+
     $('.output').text(translate(input));
-  })
-})
+  });
+});
+
 
 function translate(word) {
-  return word;
+
+  if ((word.includes("a")) || (word.includes("e")) || (word.includes("i")) || (word.includes("o")) || (word.includes("u"))) {
+    return word;
+  } else {
+    return false;
+  }
 }
