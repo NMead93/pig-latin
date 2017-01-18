@@ -12,8 +12,13 @@ $(document).ready(function() {
 function translate(word) {
 
   if ((word.includes("a")) || (word.includes("e")) || (word.includes("i")) || (word.includes("o")) || (word.includes("u"))) {
-    return word;
+    if ((word.charAt(0)) === "a" || (word.charAt(0)) === "e" || (word.charAt(0)) === "i" || (word.charAt(0)) === "o" || (word.charAt(0)) === "u") {
+      return word + "ay";
+    } else  {
+        var i = 0
+        while (i !== "a") || ()
+    }
   } else {
-    return false;
+    return "Please input a real word"
   }
 }
